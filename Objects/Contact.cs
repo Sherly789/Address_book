@@ -14,7 +14,7 @@ namespace AddressBook.Objects
     {
       _name = contactName;
       _number = contactNumber;
-      _contact = contactAddress;
+      _address = contactAddress;
       _instances.Add(this);
     }
 
