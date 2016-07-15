@@ -1,4 +1,4 @@
-# Portfolio
+# Address Book
 
 ### By
 **Shokouh Farvid**
@@ -10,6 +10,6 @@ You can store contact information for people you know.
 
 Contact the authors at [farvid.sh@gmail.com]
 
-##open in browser: 
+##open in browser:
 
 *Copyright (c) [2016] [Shokouh Farvid]*
