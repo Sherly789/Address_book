@@ -41,11 +41,6 @@ namespace AddressBook.Objects
       return _instances;
     }
 
-    // public void Save()
-    // {
-    //   _instances.Add(this);
-    // }
-
     public static void ClearAll()
     {
       _instances.Clear();

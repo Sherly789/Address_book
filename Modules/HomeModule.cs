@@ -14,16 +14,18 @@ namespace AddressBook
         return View["view_all_contacts.cshtml", allContacts];
       };
 
-
       Post["/contact_added"]  = _ => {
         Contact newContact = new Contact (
           Request.Form["new-name"],
           Request.Form["new-number"]
         );
-        // newContact.Save();
         return View["contact_added.cshtml", newContact];
       };
 
+      Post["/contacts_cleared"] = _ => {
+      Contact.ClearAll();
+      return View["contacts_cleared.cshtml"];
+      };
 
     }
   }
