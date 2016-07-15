@@ -43,7 +43,7 @@ namespace AddressBook.Objects
 
     // public void Save()
     // {
-    //   _instances.Add(_number);
+    //   _instances.Add(this);
     // }
 
     public static void ClearAll()
