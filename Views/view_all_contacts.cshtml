@@ -2,11 +2,10 @@
 <ul>
   @foreach(var contact in Model)
   {
-    <li>@contact.GetName(), @contact.GetNumber()</li>
+    <li>@contact.GetName(), @contact.GetNumber(), @contact.GetAddress</li>
   }
 </ul>
 <p><a href="/">Add another contact</a></p>
-
 <form action="/contacts_cleared" method="post">
   <button type="submit" name="button">Clear All Contacts</button>
 </form>

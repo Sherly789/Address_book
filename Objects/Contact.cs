@@ -7,12 +7,14 @@ namespace AddressBook.Objects
   {
     private string _name;
     private int _number;
+    private string _address;
     private static List<Contact> _instances = new List<Contact> {};
 
-    public Contact (string contactName, int contactNumber)
+    public Contact (string contactName, int contactNumber, string contactAddress)
     {
       _name = contactName;
       _number = contactNumber;
+      _contact = contactAddress;
       _instances.Add(this);
     }
 
@@ -34,6 +36,16 @@ namespace AddressBook.Objects
     public void SetNumber(int newNumber)
     {
       _number = newNumber;
+    }
+
+    public string GetAddress()
+    {
+      return _address;
+    }
+
+    public void SetAddress(string newAddress)
+    {
+      _name = newAddress;
     }
 
     public static List<Contact> GetAll()
