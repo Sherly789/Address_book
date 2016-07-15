@@ -1,5 +1,5 @@
 using Nancy;
-
+using AddressBook.Objects;
 using System.Collections.Generic;
 
 namespace AddressBook
@@ -8,7 +8,7 @@ namespace AddressBook
   {
     public HomeModule()
     {
-
+      Get["/"] = _ => View["add_new_contact.cshtml"];
 
     }
   }
