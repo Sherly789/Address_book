@@ -9,6 +9,7 @@ namespace AddressBook
     public HomeModule()
     {
       Get["/"] = _ => View["add_new_contact.cshtml"];
+
       Get["/view_all_contacts"] = _ => {
         List<Contact> allContacts = Contact.GetAll();
         return View["view_all_contacts.cshtml", allContacts];
@@ -23,10 +24,9 @@ namespace AddressBook
       };
 
       Post["/contacts_cleared"] = _ => {
-      Contact.ClearAll();
-      return View["contacts_cleared.cshtml"];
+        Contact.ClearAll();
+        return View["contacts_cleared.cshtml"];
       };
-
     }
   }
 }

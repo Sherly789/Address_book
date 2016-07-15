@@ -45,7 +45,5 @@ namespace AddressBook.Objects
     {
       _instances.Clear();
     }
-
-
   }
 }
